@@ -67,6 +67,8 @@ func main() {
 	r.Get("/posts", getAllPosts)
 	r.Post("/posts", createPost)
 
+	// This is some awesome text
+
 	// 	post := Post{ID: 1, Title: "Touch Typing", Content: "How about NO?", Likes: 100, Comments: nil}
 	// append(posts, post)
 	if error := http.ListenAndServe(":8080", r); error != nil {

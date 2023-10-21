@@ -2,12 +2,12 @@
 
 ## API ROUTES
 
-GET ALL POSTS
+Get all posts
 ```sh
 curl "http://localhost:8080/posts" | jq
 ```
 
-CREATE POST
+Create post
 ```sh
 curl -v -X POST -H "Content-Type: application/json" -d '{"title": "My First Post", "content": "My First Description"}' "http://localhost:8080/posts" | jq
 ```
